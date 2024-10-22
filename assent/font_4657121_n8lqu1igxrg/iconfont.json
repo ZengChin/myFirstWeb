@@ -1,0 +1,72 @@
+{
+  "id": "4657121",
+  "name": "CSS练习",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "41902572",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "8776715",
+      "name": "time",
+      "font_class": "icon-test",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "8776878",
+      "name": "download",
+      "font_class": "icon-test1",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "8777166",
+      "name": "email",
+      "font_class": "icon-test2",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "8777250",
+      "name": "user",
+      "font_class": "icon-test3",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "8777251",
+      "name": "customer_service",
+      "font_class": "icon-test4",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "8777370",
+      "name": "list",
+      "font_class": "icon-test5",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "8777494",
+      "name": "star",
+      "font_class": "icon-test6",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "8777495",
+      "name": "star_filled",
+      "font_class": "icon-test7",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    }
+  ]
+}
