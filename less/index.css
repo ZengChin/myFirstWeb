@@ -73,3 +73,19 @@
   border-radius: 20px;
   cursor: pointer;
 }
+.index_web .mainContent {
+  position: relative;
+  width: 1000px;
+  height: 900px;
+  margin: 100px auto;
+  margin-top: 50px;
+  background-color: aqua;
+}
+.index_web .fixed_table {
+  position: fixed;
+  width: 60px;
+  height: 200px;
+  right: 150px;
+  bottom: 200px;
+  background-color: red;
+}
