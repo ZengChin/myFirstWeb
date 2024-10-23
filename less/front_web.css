@@ -4,7 +4,6 @@
 }
 .front_web {
   opacity: 1;
-  display: block;
   background: linear-gradient(180deg, rgba(224, 143, 99) 120px, rgba(224, 143, 99, 0.01) 100%);
   width: 100%;
   height: 700px;
