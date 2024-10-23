@@ -4,6 +4,7 @@
 }
 .front_web {
   opacity: 1;
+  display: none;
   background: linear-gradient(180deg, rgba(224, 143, 99) 120px, rgba(224, 143, 99, 0.01) 100%);
   width: 100%;
   height: 700px;
@@ -100,18 +101,4 @@
   to {
     opacity: 1;
   }
-}
-.animation-index {
-  animation: index 0.6s linear forwards;
-}
-.index_web {
-  display: none;
-  opacity: 0;
-  height: 800px;
-  width: 100%;
-  background-color: aquamarine;
-}
-.index_web .Tips {
-  text-align: center;
-  line-height: 600px;
 }

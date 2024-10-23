@@ -1,0 +1,75 @@
+.animation-index {
+  animation: index 0.6s linear forwards;
+}
+.index_web {
+  display: block;
+  opacity: 1;
+  height: 800px;
+  width: 100%;
+}
+.index_web .deraction {
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(224, 143, 99, 0.6) 30%, rgba(224, 143, 99, 0.01) 100%);
+}
+.index_web .header {
+  height: 120px;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.index_web .header .header_content {
+  height: 120px;
+}
+.index_web .header .header_content .logoContent {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  background-image: url(../assent/Flea_logo.png);
+  background-size: 150%;
+  background-position: center;
+}
+.index_web .header .header_content .search {
+  height: 60px;
+  width: 600px;
+  margin-left: 80px;
+  padding: 10px 25px;
+  padding-right: 90px;
+  transform: translateY(-80%);
+  border-radius: 30px;
+  border: solid #ccc;
+  font-size: 16px;
+}
+.index_web .header .header_content .search:focus {
+  border-color: rgba(224, 143, 99);
+  border-width: 3px;
+  outline: none;
+}
+.index_web .header .header_content .button_search {
+  display: inline-block;
+  width: 60px;
+  height: 56px;
+  margin-left: -80px;
+  border-left: 2px solid #ccc;
+  text-align: center;
+  line-height: 60px;
+  transform: translateY(-82%);
+  cursor: pointer;
+}
+.index_web .header .header_content .signbox {
+  display: inline-block;
+  margin-left: 60px;
+}
+.index_web .header .header_content .icon_1 {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  transform: translateY(-105%);
+  font-size: 15px;
+  border: solid rgba(224, 143, 99, 0.6) 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}

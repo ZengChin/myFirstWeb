@@ -1,0 +1,81 @@
+.animation-index{
+    animation: index .6s linear forwards;
+}
+
+.index_web{
+    // margin-top: -700px;
+    display: block;//----------------------到时候需要改成none
+    opacity: 1;//-----------------------到时候需要改成0
+    height: 800px;
+    width: 100%;
+    // background-color: aquamarine;  
+    .deraction{
+        height: 60px;
+        width: 100%;
+        background: linear-gradient(180deg,
+        rgba(224, 143, 99,.6) 30%,
+        rgba(224, 143, 99,.01) 100%);
+    }
+    .header{
+        height: 120px;
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        .header_content{
+            height: 120px;
+            .logoContent{
+                display: inline-block;
+                height: 120px;
+                width: 120px;
+                border-radius: 60px;
+                background-image: url(../assent/Flea_logo.png);
+                background-size: 150%;
+                background-position: center;
+            }
+            .search{
+                height: 60px;
+                width: 600px;
+                margin-left: 80px;
+                padding: 10px 25px;
+                padding-right: 90px;
+                transform: translateY(-80%);
+                border-radius: 30px;
+                border: solid #ccc;
+                font-size: 16px;
+            }
+            .search:focus{
+                border-color: rgba(224, 143, 99);
+                border-width: 3px;
+                outline: none;
+            }
+            .button_search{
+                display: inline-block;
+                width: 60px;
+                height: 56px;
+                margin-left: -80px;
+                border-left: 2px solid #ccc;
+                text-align: center;
+                line-height: 60px;
+                transform: translateY(-82%);
+                cursor: pointer;
+            }
+            .signbox{
+                display: inline-block;
+                margin-left: 60px;
+            }
+            .icon_1{
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                text-align: center;
+                transform: translateY(-105%);
+                font-size: 15px;
+                border: solid rgba(224, 143, 99,.6) 2px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+        }
+    } 
+}
