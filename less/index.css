@@ -4,7 +4,7 @@
 .index_web {
   display: none;
   opacity: 0;
-  height: 800px;
+  height: auto;
   width: 100%;
 }
 .index_web .deraction {
@@ -12,11 +12,18 @@
   width: 100%;
   background: linear-gradient(180deg, rgba(224, 143, 99, 0.6) 30%, rgba(224, 143, 99, 0.01) 100%);
 }
+.index_web .deraction p {
+  text-align: center;
+  line-height: 60px;
+  color: white;
+}
 .index_web .header {
   height: 120px;
   width: 1000px;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
 }
 .index_web .header .header_content {
   height: 120px;
@@ -48,13 +55,13 @@
 }
 .index_web .header .header_content .button_search {
   display: inline-block;
-  width: 60px;
+  width: 70px;
   height: 56px;
   margin-left: -80px;
   border-left: 2px solid #ccc;
   text-align: center;
-  line-height: 60px;
-  transform: translateY(-82%);
+  line-height: 56px;
+  transform: translateY(-86%);
   cursor: pointer;
 }
 .index_web .header .header_content .signbox {
@@ -75,17 +82,70 @@
 }
 .index_web .mainContent {
   position: relative;
-  width: 1000px;
-  height: 900px;
+  width: 1100px;
+  height: auto;
   margin: 100px auto;
-  margin-top: 50px;
-  background-color: aqua;
+  margin-top: 20px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 40px;
+}
+.index_web .mainContent .table_head {
+  height: 400px;
+  width: 100%;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+.index_web .mainContent .title {
+  height: 20px;
+  margin-bottom: 15px;
+}
+.index_web .mainContent .title span {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.index_web .mainContent .title a {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 85%;
+  margin-top: 20px;
+}
+.index_web .mainContent .goodlist ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.index_web .mainContent .goodlist ul li {
+  display: inline-block;
+  height: 300px;
+  width: 196px;
+  background-color: #ccc;
+  margin: 25px 10px;
+  border: 2px solid rgba(204, 204, 204, 0);
+  cursor: pointer;
+}
+.index_web .mainContent .goodlist ul li:hover {
+  border: 2px solid rgba(224, 143, 99);
+  box-shadow: 1px 1px 3px black;
 }
 .index_web .fixed_table {
   position: fixed;
-  width: 60px;
-  height: 200px;
-  right: 150px;
+  width: 100px;
+  height: 400px;
+  right: 0px;
   bottom: 200px;
   background-color: red;
+}
+.index_web .finaltable {
+  width: 100%;
+  height: 400px;
+  border-top: 2px solid #ccc;
+}
+.index_web .finaltable h1 {
+  text-align: center;
+  line-height: 400px;
 }

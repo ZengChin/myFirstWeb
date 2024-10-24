@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  background-color: #f6f6f6;
+}
 .front_web {
   opacity: 1;
   background: linear-gradient(180deg, rgba(224, 143, 99) 120px, rgba(224, 143, 99, 0.01) 100%);
