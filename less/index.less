@@ -1,7 +1,10 @@
 .animation-index{
     animation: index .6s linear forwards;
 }
+a{
+    text-decoration: none;
 
+}
 .index_web{
     // margin-top: -700px;
     display: none;//----------------------到时候需要改成none
@@ -105,8 +108,84 @@
         .table_head{//--------存放分类导航
             height:400px;
             width: 100%;
-            background-color: #ccc;
+            // background-color: #f8f8f8;
             margin-bottom: 20px;
+            border-radius: 20px;
+            position: relative;
+            margin-top: 0;
+                .head_nav{//第一个导航方块
+                    // position: absolute;
+                    display: inline-block;
+                    width: 30%;
+                    height: 100%;
+                    // background-color: #ccc;
+                    // top: 25px;
+                    // left: 20px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    .contain_list{
+                        height: 25%;
+                        width: 100%;
+                        background-color: #f8f8f8;
+                        border-bottom: 1px #eee solid;
+                        position: relative;
+                        .main_nav{
+                            display: inline-block;
+                            width: 20%;
+                            height: 100%;
+                            cursor: pointer;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            a{
+                                display: inline-block;
+                                width: 100%;
+                                margin-bottom: -20px;
+                                line-height: 80px;
+                                text-align: center;
+                                font-size: 20px;
+                                width: 100%;
+                            }
+                            span{
+                                display: inline-block;
+                                margin-top: -20px;
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                        .nav_list{
+                            display: inline-block;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            height: 100%;
+                            width: 80%;
+                            a{
+                                display: inline-block;
+                                color: #9b9b9b;
+                                margin: 6px;
+                                font-size: 12px;
+                            }
+                            a:hover{
+                                color: rgb(240, 9, 94);
+                            }
+                        }
+                    }
+                    .contain_list:hover{
+                        background-color: rgba(224, 143, 99,.6);
+                        color: rgb(240, 9, 94);
+                    }
+                }
+                .front_nav{//第二个导航方块
+                    display: inline-block;
+                    position: absolute;
+                    right: 10px;
+                    height: 100%;
+                    width: 67%;
+                    border-radius: 20px;
+                    background-color: rgba(224, 143, 99,.6);
+                }
+
         }
         .title{//内容标题
             height: 20px;
@@ -131,12 +210,11 @@
                 list-style: none;
                 display: flex;
                 flex-wrap: wrap;
-                // justify-content: space-evenly;
                 li{
                     display: inline-block;
                     height: 300px;
                     width: 196px;
-                    background-color: #ccc;
+                    background-color: #f8f8f8;
                     margin: 25px 10px;
                     border: 2px solid rgba(204,204,204,0);
                     cursor: pointer;
