@@ -6,7 +6,7 @@
     <title>跳蚤校园</title>
     <link rel="stylesheet" href="./less/front_web.css">
     <link rel="stylesheet" href="./less/index.css">
-    <link rel="stylesheet" href="./assent/font_4657121_n8lqu1igxrg/iconfont.css">
+    <!-- <link rel="stylesheet" href="./assent/font_4657121_n8lqu1igxrg/iconfont.css"> -->
     <link rel="stylesheet" href="./assent/icfont/iconfont.css">
 </head>
 <body>
@@ -42,74 +42,125 @@
         <div class="mainContent"> <!--存放主要内容，但有分区块:1.最新上架，2.本校好货，3.热门商品-->
 
             <div class="table_head">  <!--数码，工具，出行，服饰-->
+
                 <div class="head_nav"> <!--第一个导航方块-->
-                    <div class="contain_list">
-                        <div class="main_nav">
-                            <a class="iconfont icon-shumashouji"></a> 
-                            <span>数码</span>
+                    <div class="contain_list" data-id="0">
+                        <div class="container">
+                            <div class="main_nav">
+                                <a class="iconfont icon-shumashouji"></a> 
+                                <span>数码</span>
+                            </div>    
+                            <div class="nav_list">
+                                <a href="#">手机</a>
+                                <a href="#">平板</a>
+                                <a href="#">电脑</a>
+                                <a href="#">华为</a> 
+                                <a href="#">小米</a>
+                                <a href="#">oppo</a>
+                                <a href="#">vivo</a>
+                                <a href="#">iphone</a>
+                                <a href="#">鼠标</a>
+                                <a href="#">键盘</a>
+                                <a href="#">照相机</a>
+                                <a href="#">手机膜</a>
+                                <a href="#">镜头</a>
+                                <a href="#">索尼</a>
+                            </div>                            
                         </div>
-                        <div class="nav_list">
-                            <a href="#">手机</a>
-                            <a href="#">平板</a>
-                            <a href="#">电脑</a>
-                            <a href="#">华为</a> 
-                            <a href="#">小米</a>
-                            <a href="#">oppo</a>
-                            <a href="#">vivo</a>
-                            <a href="#">iphone</a>
-                            <a href="#">鼠标</a>
-                            <a href="#">键盘</a>
-                            <a href="#">照相机</a>
-                            <a href="#">手机膜</a>
-                            <a href="#">镜头</a>
-                            <a href="#">索尼</a>
-                        </div>
-                    </div>
-                    <div class="contain_list">
-                        <div class="main_nav">
-                            <a class="iconfont icon-chuhang"></a> 
-                            <span>用具</span>
-                        </div>
-                        <div class="nav_list">
-                            <a href="#">乒乓球拍</a>
-                            <a href="#">羽毛球拍</a>
-                            <a href="#">跳绳</a>
-                            <a href="#">手机支架</a>
-                            <a href="#">水杯</a>
-                            <a href="#">高等数学</a>
-                            <a href="#">四级单词本</a>
-                            <a href="#">大一期末复习宝典</a>
+                        <div class="nav_contain"><!--右边侧边栏-->
+                            <div class="border_wrap"></div>
                         </div>
                     </div>
-                    <div class="contain_list">
-                        <div class="main_nav">
-                            <a class="iconfont icon-chuhang1"></a>
-                            <span>出行</span>
+                    <div class="contain_list" data-id="1">
+                        <div class="container">
+                            <div class="main_nav">
+                                <a class="iconfont icon-chuhang"></a> 
+                                <span>用具</span>
+                            </div>
+                            <div class="nav_list">
+                                <a href="#">乒乓球拍</a>
+                                <a href="#">羽毛球拍</a>
+                                <a href="#">跳绳</a>
+                                <a href="#">手机支架</a>
+                                <a href="#">水杯</a>
+                                <a href="#">高等数学</a>
+                                <a href="#">四级单词本</a>
+                                <a href="#">大一期末复习宝典</a>
+                            </div>
                         </div>
-                        <div class="nav_list">
-                            <a href="#">自行车</a>
-                            <a href="#">电动车</a>
-                            <a href="#">雨衣</a>
-                            <a href="#">雨伞</a>
-                            <a href="#">电动车挡风罩</a>
-                        </div>
-                    </div>
-                    <div class="contain_list">
-                        <div class="main_nav"><a class="iconfont icon-Formal-Coat"></a> <span>服饰</span></div>
-                        <div class="nav_list">
-                            <a href="#">羽绒服</a>
-                            <a href="#">打底衫</a>
-                            <a href="#">拖鞋</a>
-                            <a href="#">马丁靴</a>
-                            <a href="#">外套</a>
-                            <a href="#">夹克</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">西装</a>
+                        <div class="nav_contain"><!--右边侧边栏-->
+                            <div class="border_wrap"></div>
                         </div>
                     </div>
+                    <div class="contain_list" data-id="2">
+                        <div class="container">
+                            <div class="main_nav">
+                                <a class="iconfont icon-chuhang1"></a>
+                                <span>出行</span>
+                            </div>
+                            <div class="nav_list">
+                                <a href="#">自行车</a>
+                                <a href="#">电动车</a>
+                                <a href="#">雨衣</a>
+                                <a href="#">雨伞</a>
+                                <a href="#">电动车挡风罩</a>
+                            </div>
+                        </div>
+                        <div class="nav_contain"><!--右边侧边栏-->
+                            <div class="border_wrap"></div>
+                        </div>
+                    </div>
+                    <div class="contain_list" data-id="3">
+                        <div class="container">
+                            <div class="main_nav">
+                                <a class="iconfont icon-Formal-Coat">
+                                </a> <span>服饰</span>
+                            </div>
+                            <div class="nav_list">
+                                <a href="#">羽绒服</a>
+                                <a href="#">打底衫</a>
+                                <a href="#">拖鞋</a>
+                                <a href="#">马丁靴</a>
+                                <a href="#">外套</a>
+                                <a href="#">夹克</a>
+                                <a href="#">衬衫</a>
+                                <a href="#">西装</a>
+                            </div>
+                        </div>
+                        <div class="nav_contain"><!--右边侧边栏-->
+                            <div class="border_wrap"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="nav_contain"></div> -->
                 </div>
                 <div class="front_nav"> <!--第二个导航方块-->
-
+                    <div class="carousel">
+                        <!-- 向左按钮 -->
+                        <div class="leftbutton iconfont icon-arrow-left-wide-fill cosbtn"></div>
+                        <!-- 轮播图图片 -->
+                        <div class="calcontain">
+                            <div class="carousel_list active"><i class="price">￥2666</i><h5>9成新喜德盛AD350，购入4个月，无磨损，无划痕,仅限本地自提，有意者私</h5><img src="./assent/bike.avif"></div>
+                            <div class="carousel_list"><i class="price">￥3999</i><h5>99成新HONOR/荣耀笔记本 X Plus 锐龙 R7-8845H标压处理器轻薄本MagicBook笔记本电脑AI PC</h5><img src="./assent/computer.avif"></div>
+                            <div class="carousel_list"><i class="price">￥24</i><h5>本人不想吃了，日期还很新，包装完整，绝对安全，本人可试吃一颗</h5><img src="assent/cookie.avif"></div>
+                        </div>
+                        <!-- 三个小按钮 -->
+                        <div class="turnchange">
+                            <span class="active" data-id="0"> </span>
+                            <span data-id="1"> </span>
+                            <span data-id="2"> </span>
+                        </div>
+                        <!-- 向右按钮 -->
+                        <div class="rightbutton  iconfont icon-arrow-right-wide-line cosbtn"></div>
+                    </div>
+                    <div class="hottuijian"></div>
+                </div>
+                <div class="last_nav"><!--第三个导航模块-->
+                    <h3 class="hotdisguss">热门讨论</h3>
+                    <div class="img_contain">
+                        <img src="./assent/polit.jpg" alt="">
+                        <img src="./assent/taili.jpg" alt="">
+                        <img src="./assent/tiez.jpg" alt="">
+                    </div>
                 </div>
             </div>
 

@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "42191234",
+      "name": "arrow-left-wide-fill",
+      "font_class": "arrow-left-wide-fill",
+      "unicode": "e746",
+      "unicode_decimal": 59206
+    },
+    {
+      "icon_id": "42191246",
+      "name": "arrow-right-wide-line",
+      "font_class": "arrow-right-wide-line",
+      "unicode": "e748",
+      "unicode_decimal": 59208
+    },
+    {
       "icon_id": "5135",
       "name": "数码手机",
       "font_class": "shumashouji",
