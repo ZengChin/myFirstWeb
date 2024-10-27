@@ -73,6 +73,9 @@ html {
   color: aliceblue;
   text-decoration: underline red solid 2px;
 }
+.front_web .tips {
+  text-align: center;
+}
 @keyframes dying {
   0% {
     opacity: 1;
