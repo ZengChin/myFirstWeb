@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .animation-index{
     animation: index .6s linear forwards;
 }
@@ -212,6 +215,29 @@ a{
                             background-color: white;
                             // opacity: .6;
                             border: 2px solid rgba(224, 143, 99);
+                            overflow: auto;
+                            .wrap_data{
+                                display: inline-block;
+                                height: 30%;
+                                width: 18%;
+                                margin: 10px 15px;
+                                background-color: aqua;
+                                // background-image: url(../assent/phone.png);
+                                background-size: 100%;
+                                img{
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                                p{
+                                    display: inline-block;
+                                    width: 100%;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    font-size: 12px;
+                                    // margin-bottom: -130px;
+                                }
+                            }
                         }
                     }
                     .contain_list:hover{
@@ -381,29 +407,151 @@ a{
                     display: inline-block;
                     height: 300px;
                     width: 196px;
-                    background-color: #f8f8f8;
+                    // background-color: #f8f8f8;
                     margin: 25px 10px;
                     border: 2px solid rgba(204,204,204,0);
                     cursor: pointer;
+                    overflow: hidden;
+                    text-align: center;
+                    img{
+                        width: 90%;
+                        height: 85%;
+                        transition: all .4s;
+                        z-index: 1;
+                    }
+                    div{
+                        text-align: left;
+                        line-height: 20px
+                    }
+                    p{
+                        display: inline-block;
+                        width: 60%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-bottom: -5px;
+                        padding-left: 5px;
+                    }
+                    span{
+                        display: inline-block;
+                        width: 50px;
+                        height: 20px;
+                        margin-top: 20px;
+                        background-color: rgb(240, 9, 94);
+                        color: white;
+                        z-index: 2;
+                    }
                 }
                 li:hover{
                     border: 2px solid rgba(224, 143, 99);
                     box-shadow: 1px 1px 3px black;
+                }
+                li:hover>img{
+                    transform: scale(1.1);
                 }
             }
         }
     }
     //<-------中心内容区结束
 
+    // 帘动搜索框
+    .search_scroll{
+        position: fixed;
+        top: -100px;
+        text-align: center;
+        height: 100px;
+        width: 1180px;
+        // margin: 0 auto;
+        left: 253px;
+        background-color: rgba(224, 143, 99);
+        transition: all 0.6s;
+        z-index: 100;
+        span{
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            // left: 200px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-image: url(../assent/Flea_logo.png);
+            background-size: 150%;
+            background-position: center;
+        }
+        div{
+            // top: 0;
+            display: inline-block;
+            right: 800px;
+            height: 100%;
+            width: 400px;
+            margin-left: 100px;
+            // left: 800px;
+            input{
+                margin-top: 30px;
+                height: 40px;
+                width: 380px;
+                border-radius: 20px;
+                font-size: 16px;
+                border: solid #ccc;
+                padding-left: 20px;
+                padding-right: 70px;
+            }
+            input:focus{
+                outline-color: rgba(224, 143, 99);
+            }
+            a{
+                display: inline-block;
+                width: 60px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 15px;
+                background-color: rgb(240, 9, 94);
+                margin-left: -70px;
+                color: white;
+            }
+        }
+    }
+
+
     //固定导航区-------->
     .fixed_table{
         position: fixed;
         width: 100px;
-        height: 400px;
+        // height: 400px;
         right: 0px;
         bottom: 200px;
-        background-color: red;
-
+        background-color: white;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        text-align: center;
+        overflow: hidden;
+        div{
+            display: inline-block;
+            line-height: 80px;
+            height: 20%;
+            width: 100%;
+        }
+        div:hover{
+            background-color: rgba(224, 143, 99);
+            color: rgb(240, 9, 94);
+            cursor: pointer;
+        }
+        .waiter{
+            height: 80px;
+            span{
+                display: inline-block;
+                font-size: 35px;
+                z-index: 10px;
+                line-height: 5px;
+            }
+            p{
+                line-height: 10px;
+                margin-top: -15px;
+            }
+        }
+        .toTop{
+            display: none;
+        }
     }
     //<-------固定导航区结束
 
@@ -417,4 +565,27 @@ a{
             line-height: 400px;
         }
     }
+    .ad_content{
+        position: fixed;
+        left: 100px;
+        top: 200px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 25px;
+        background-color: red;
+        cursor: pointer;
+        user-select: none;
+        color: white;
+        animation: pong infinite alternate 1s linear;
+    }
+
+    @keyframes pong {
+        to{}
+        from{
+            transform: scale(1.5);
+        }
+    }
+
 }
