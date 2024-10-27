@@ -4,10 +4,10 @@
 
 const index_web=document.querySelector('.index_web')
 const front_web = document.querySelector(".front_web")
-
+const star = document.querySelector(".star")
 // console.log(front_web.children[2].opacity);
 
-front_web.children[4].addEventListener("click",function(){
+star.addEventListener("click",function(){
         front_web.classList.add("animation-dying")
         // front_web.classList.remove("animation-dying")
         this.classList.add("animation-trans")
