@@ -429,7 +429,6 @@ window.addEventListener("scroll",()=>{
 
 const fixed_table = document.querySelector(".fixed_table")
 fixed_table.addEventListener("click",(e)=>{
-    // console.log(e.target.classList.contains("togo"))
     if(e.target.classList[0]==="toNew"){
         document.documentElement.scrollTop = newGood
     }else if(e.target.classList[0]==='toSco'){
@@ -450,5 +449,7 @@ ad_content.addEventListener("click",()=>{
     ad_content.style.display = "none"
 })
 
+
+console.log(111);
 
 

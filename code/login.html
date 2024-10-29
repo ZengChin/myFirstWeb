@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <style>
+        .main_contain{
+            height: 600px;
+            width: 60%;
+            margin: 20px auto;
+            /* background-color: antiquewhite; */
+            position: relative;
+        }
+        .logTitle{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            /* display: block; */
+            height: 30px;
+            width: 300px;
+            margin: 40px;
+            border-radius: 15px;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: 3px solid rgba(224, 143, 99,.4);
+            outline-color: rgba(224, 143, 99);
+        }
+        .logbody{
+            position: absolute;
+            top: 20%;
+            /* height: auto; */
+            width: 100%;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        form{
+            position: absolute; 
+            left: 50%;
+            width: 100%;
+            transform: translateX(-50%);
+         } 
+         button{
+            /* height: 30px;
+            width: 50px; */
+            border-radius: 5px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            outline: none;
+            padding: 10px 20px;     
+         }
+         button:hover{
+            background-color: #0056b3;
+         }
+         button:active{
+            transform: scale(0.98);
+         }
+         button:focus{
+            border: 1px solid #fff;
+         }
+         label{
+            display: block;
+         }
+         span{
+            display: inline-block;
+            width: 48px;
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+    <div class="main_contain">
+        <div class="logTitle">
+            <h1>登录</h1>
+        </div>
+        <div class="logbody">
+            <form action="">
+                <label for="name"><span>用户名</span>:<input type="text" id="name"></label>
+                <label for="password_log"><span>密码</span>:<input type="password" id="password_log"></label>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

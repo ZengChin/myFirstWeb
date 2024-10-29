@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <!-- <link rel="stylesheet" href="../JS/sign.js"> -->
+    <style>
+        .maincontain{
+            position: relative;
+            margin: 100px auto;
+            /* background-color: aqua; */
+            width: 1000px;
+        }
+        h1{
+            text-align: center;
+        }
+        .body{
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            margin-top: 10px;
+        }
+        label{
+            display: block;
+            margin: 40px;
+            position: relative;
+        }
+        input{
+            display: inline-block;
+            height: 35px;
+            width: 240px;
+            font-size: 16px;
+            border-radius: 10px;
+            padding: 0 15px;
+            border: 2px solid rgba(224, 143, 99,.4);
+            outline-color: rgba(224, 143, 99);
+        }
+        span{
+            display: inline-block;
+            width: 80px;
+        }
+        button{
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius:5px;
+            border: none;
+            background-color: aqua;
+        }
+        button:active{
+            transform: scale(0.98);
+        }
+        p{
+            /* display: none; */
+            position: absolute;
+            top: 28%;
+            left: 70%;
+            margin-top: 0;
+            /* height: 45px; */
+            vertical-align: middle;
+            /* line-height: 45px; */
+            /* background-color: aqua */
+        }
+        .ture{
+            /* background-color: ; */
+            color: aquamarine;
+        }
+        .false{
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontain">
+        <div class="title">
+            <h1>注册</h1>
+        </div>
+        <div class="body">
+            <form class="sign_form">
+                <label for="user"><span>用户名：</span><input type="text" id="user" placeholder="3~6位由字母数字字符组成的用户名"><p>3~6位由字母数字字符组成的用户名</p></label>
+                <label for="password"><span>密码：</span><input type="password" id="password" placeholder="3~6位由字母数字字符组成的密码"><p>3~6位由字母数字字符组成的用户名</p></label>
+                <label for="password_confirm"><span>确认密码：</span><input type="password" id="password_confirm"><p></p></label>
+                <button type="submit">注册</button>
+                 <!-- <input type="submit"> -->
+            </form>
+        </div>
+    </div>
+    <script src="../JS/sign.js"></script>
+</body>
+</html>

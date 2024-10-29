@@ -85,7 +85,12 @@ a {
   font-size: 15px;
   border: solid rgba(224, 143, 99, 0.6) 2px;
   border-radius: 20px;
+  color: rgba(224, 143, 99, 0.6);
   cursor: pointer;
+}
+.index_web .header .header_content .icon_1:hover {
+  color: rgba(224, 143, 99);
+  border: solid rgba(224, 143, 99) 2px;
 }
 .index_web .mainContent {
   position: relative;
