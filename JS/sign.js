@@ -9,12 +9,12 @@ user.addEventListener("change",verify_user)
 password.addEventListener("change",verify_pass)
 password_confirm.addEventListener("change",verify_Vpass)
 
-
+alert("账号只有最后一个注册的才生效")
 function verify_user(){
     const stand = /^[a-zA-Z0-9_]{3,6}$/
     const nextNode = user.nextElementSibling
     if(stand.test(user.value)){
-        nextNode.innerHTML = '格式正确'
+        nextNode.innerHTML = ' '
         if(nextNode.classList.contains("false")) nextNode.classList.remove("false")
         nextNode.classList.add("ture")
         return true
@@ -32,7 +32,7 @@ function verify_pass(){
     const stand = /^[a-zA-Z0-9_]{3,6}$/
     const nextNode = password.nextElementSibling
     if(stand.test(password.value)){
-        nextNode.innerHTML = '格式正确'
+        nextNode.innerHTML = ' '
         if(nextNode.classList.contains("false")) nextNode.classList.remove("false")
         nextNode.classList.add("ture")
         return true
@@ -50,7 +50,7 @@ function verify_Vpass(){
     const stand = password.value
     const nextNode = password_confirm.nextElementSibling
     if(password_confirm.value === stand){
-        nextNode.innerHTML = '密码正确'
+        nextNode.innerHTML = ' '
         if(nextNode.classList.contains("false")) nextNode.classList.remove("false")
         nextNode.classList.add("ture")
         return true
@@ -65,11 +65,16 @@ function verify_Vpass(){
 
 
 sign_form.addEventListener("submit",(e)=>{
-        // e.preventDefault()
-        if(!verify_user()) {e.preventDefault();console.log(111);
+        let flag = true;
+        if(!verify_user()) {e.preventDefault();flag = false}
+        if(!verify_pass()) {e.preventDefault();flag = false}
+        if(!verify_Vpass()) {e.preventDefault();flag = false}
+                
+        if(flag){
+            e.preventDefault();
+            localStorage.setItem("username",JSON.stringify(user.value))
+            localStorage.setItem("password",JSON.stringify(password.value))
+            sign_form.reset()
+            alert("登录成功")
         }
-        if(!verify_pass()) e.preventDefault();
-        // if(!verify_Vpass()) e.preventDefault();
-        // console.log(verify_user());
-        // console.log(111);  
 })

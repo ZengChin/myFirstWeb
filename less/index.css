@@ -73,7 +73,9 @@ a {
 }
 .index_web .header .header_content .signbox {
   display: inline-block;
-  margin-left: 60px;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
 }
 .index_web .header .header_content .icon_1 {
   display: inline-block;

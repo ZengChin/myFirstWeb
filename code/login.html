@@ -23,7 +23,6 @@
             text-align: center;
         }
         input{
-            /* display: block; */
             height: 30px;
             width: 300px;
             margin: 40px;
@@ -36,7 +35,6 @@
         .logbody{
             position: absolute;
             top: 20%;
-            /* height: auto; */
             width: 100%;
             text-align: center;
             background-color: aquamarine;
@@ -48,8 +46,6 @@
             transform: translateX(-50%);
          } 
          button{
-            /* height: 30px;
-            width: 50px; */
             border-radius: 5px;
             color: #fff;
             background-color: #007bff;
@@ -84,12 +80,13 @@
             <h1>登录</h1>
         </div>
         <div class="logbody">
-            <form action="">
+            <form action="" class="loge">
                 <label for="name"><span>用户名</span>:<input type="text" id="name"></label>
                 <label for="password_log"><span>密码</span>:<input type="password" id="password_log"></label>
                 <button type="submit">登录</button>
             </form>
         </div>
     </div>
+    <script src="../JS/log.js"></script>
 </body>
 </html>

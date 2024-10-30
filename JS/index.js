@@ -453,3 +453,18 @@ ad_content.addEventListener("click",()=>{
 console.log(111);
 
 
+
+//登录
+const signbox = document.querySelector(".signbox")
+if(localStorage.getItem("username")){
+    signbox.innerHTML = `您好用户:${JSON.parse(localStorage.getItem("username"))} 
+    ||<a class = "deluser">注销用户 </a>`
+
+}
+
+const deluser = document.querySelector(".deluser")
+deluser.addEventListener("click",()=>{
+    alert("用户已注销")
+    localStorage.clear()
+    location.reload();
+})
