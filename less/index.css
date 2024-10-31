@@ -74,7 +74,7 @@ a {
 .index_web .header .header_content .signbox {
   display: inline-block;
   position: absolute;
-  bottom: 5%;
+  top: 30%;
   right: 0;
 }
 .index_web .header .header_content .icon_1 {
@@ -83,7 +83,6 @@ a {
   width: 40px;
   line-height: 40px;
   text-align: center;
-  transform: translateY(-105%);
   font-size: 15px;
   border: solid rgba(224, 143, 99, 0.6) 2px;
   border-radius: 20px;

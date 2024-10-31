@@ -76,5 +76,6 @@ sign_form.addEventListener("submit",(e)=>{
             localStorage.setItem("password",JSON.stringify(password.value))
             sign_form.reset()
             alert("登录成功")
+            window.location.replace('../index.html')
         }
 })
